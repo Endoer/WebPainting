@@ -1,6 +1,5 @@
 "use strict"
 const canvas = document.getElementById("drawField");
-let ctx = canvas.getContext("2d");
 ctx.strokeRect(0,0,canvas.width,canvas.height)
 console.log(canvas);
 class Pen {
@@ -11,7 +10,14 @@ class Pen {
 }
 
 let pen = new Pen();
-
+frameCreate();
+function frameCreate(){
+    let ctx = canvas.getContext("2d");
+}
+function Clear(){
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    frameCreate()
+}
 
 function drawPoint(event) {
     console.log("tryDraw")
