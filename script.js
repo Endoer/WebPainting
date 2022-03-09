@@ -1,6 +1,5 @@
 "use strict"
 const canvas = document.getElementById("drawField");
-ctx.strokeRect(0,0,canvas.width,canvas.height)
 console.log(canvas);
 class Pen {
     constructor(size = 10, color = 'black') {
