@@ -12,7 +12,7 @@ class Pen {
 let pen = new Pen();
 frameCreate();
 function frameCreate(){
-    let ctx = canvas.getContext("2d");
+    ctx.strokeRect(0,0,canvas.width,canvas.height);
 }
 function Clear(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
