@@ -1,5 +1,6 @@
 "use strict"
 const canvas = document.getElementById("drawField");
+let ctx = canvas.getContext("2d");
 console.log(canvas);
 class Pen {
     constructor(size = 10, color = 'black') {
